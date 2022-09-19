@@ -1,7 +1,7 @@
-from re import M
-from FunctionsBP import cana_de_acucar
-from FunctionsBP import milho
-from FunctionsBP import soja
+from functions.func_cana import cana_de_acucar
+from functions.func_milho import milho
+from functions.func_soja import soja
+
 
 
 
@@ -13,13 +13,13 @@ def menu():
     ''')
 
     if opcao == '1':
-        soja
+        soja()
 
-    if opcao == '2':
-        cana_de_acucar
+    elif opcao == '2':
+        cana_de_acucar()
     
-    if opcao == '3':
-        FunctionsBP.milho
+    elif opcao == '3':
+        milho()
     
     
 
